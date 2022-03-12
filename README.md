@@ -68,6 +68,12 @@ Option details:
 
 For all these callback functions, *this* will be the DOM element for which the event was triggered. The first callback function argument (if present) will be the actual `event` so you can do whatever you want with it.
 
+Note that in the example `pika-sortable.html`, you can drag-n-drop boxes *between* the top 3 columns, but you **cannot** drag-n-drop between the top 3 columns and either the horizontal row of *Things* or the grid of *Stuff* boxes.
+
+Every time you call `.sortable`, it automagically groups *all* selected draggable elements in *all* matching container names together as 1 group.
+
+If you wanted to have 3 independent columns, you'd give either the containers or the draggable elements different class names, and then call `.sortable` on each column.
+
 Also, note that the `dragover` event is throttled by Sortable so it never runs more than once every 10ms. That means your `on_dragover` callback will *also* be throttled so it only runs when `dragover` is executed.
 
 ### .removeSortable
