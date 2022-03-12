@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PikaJS Sortable Demo</title>
+    <link rel="stylesheet" href="pika-sortable.css" />
+		<script src="pika-min.js"></script>
+		<script src="pika-sortable-min.js"></script>
+  </head>
+  <body>
+    <main class="board">
+			<div class="column columna column-todo">
+				<h2>Todo</h2>
+				<div class="card">
+					<h3>Item #7</h3>
+				</div>
+				<div class="card" style="height:110px;">
+					<h3>Item #8</h3>
+				</div>
+				<div class="card" style="height:220px;">
+					<h3>Item #9</h3>
+				</div>
+				<div class="card">
+					<h3>Item #10</h3>
+				</div>
+			</div>
+      <div class="column columnb column-ip">
+        <h2>In Progress</h2>
+        <div class="card">
+          <h3>Item #1</h3>
+        </div>
+        <div class="card" style="height:110px;">
+          <h3>Item #2</h3>
+        </div>
+        <div class="card">
+          <h3>Item #4</h3>
+        </div>
+      </div>
+      <div class="column columnc column-done">
+        <h2>Done</h2>
+        <div class="card">
+          <h3>Item #3</h3>
+        </div>
+        <div class="card">
+          <h3>Item #5</h3>
+        </div>
+        <div class="card" style="height:180px;">
+          <h3>Item #6</h3>
+        </div>
+      </div>
+    </main>
+    <main class="board">
+      <div class="row row-things">
+        <h2>Things</h2>
+        <div class="card">
+          <h3>Thing #1</h3>
+        </div>
+        <div class="card">
+          <h3>Thing #2</h3>
+        </div>
+        <div class="card">
+          <h3>Thing #3</h3>
+        </div>
+        <div class="card">
+          <h3>Thing #4</h3>
+        </div>
+      </div>
+    </main>
+		<main class="board">
+			<div class="grid grid-stuff">
+				<h2>Stuff</h2>
+				<div class="card">
+					<h3>Stuff #1</h3>
+				</div>
+				<div class="card">
+					<h3>Stuff #2</h3>
+				</div>
+				<div class="card">
+					<h3>Stuff #3</h3>
+				</div>
+				<div class="card">
+					<h3>Stuff #4</h3>
+				</div>
+				<div class="card">
+					<h3>Stuff #5</h3>
+				</div>
+				<div class="card">
+					<h3>Stuff #6</h3>
+				</div>
+				<div class="card">
+					<h3>Stuff #7</h3>
+				</div>
+				<div class="card">
+					<h3>Stuff #8</h3>
+				</div>
+				<div class="card">
+					<h3>Stuff #9</h3>
+				</div>
+				<div class="card">
+					<h3>Stuff #10</h3>
+				</div>
+				<div class="card">
+					<h3>Stuff #11</h3>
+				</div>
+				<div class="card">
+					<h3>Stuff #12</h3>
+				</div>
+			</div>
+		</main>
+    <main class="board"><main>
+		<script>
+			$('.column').sortable('.column .card');
+			$('.row').sortable('.row .card', {direction: 'horizontal'});
+			$('.grid').sortable('.grid .card', {
+				direction: 'grid'
+			});
+		</script>
+	</body>
+</html>
