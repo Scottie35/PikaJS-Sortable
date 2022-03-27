@@ -2,6 +2,8 @@
 
 Sortable (drag-n-drop) plugin for PikaJS that is **3.8KB** minified. Yup, that's tiny.
 
+[Try the PikaJS Demo!](https://pikajs.com/)
+
 ## What is PikaJS?
 
 [PikaJS](https://github.com/Scottie35/PikaJS) is a client-side scripting library like jQuery, but 7 times smaller, faster, and more efficient.
@@ -20,7 +22,7 @@ Sortable supports horizontal drag-n-drop, vertical drag-n-drop, and grid layout 
 
 When you're done, simply save the new position of the re-arranged elements however you wish using your own code, and then call `.removeSortable` to remove the sortability.
 
-For a demo, download the whole shebang and load `pika-sortable.html` in your browser. And don't forget to also grab [pika-min.js](https://github.com/Scottie35/PikaJS)!!
+For a demo, [Go Here](https://pikajs.com/) OR download the whole shebang and load `pika-sortable.html` in your browser. And don't forget to also grab [pika-min.js](https://github.com/Scottie35/PikaJS)!!
 
 ### .sortable
 
