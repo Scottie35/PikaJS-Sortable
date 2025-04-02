@@ -1,6 +1,6 @@
 /** 
- *	@license PikaJS Sortable plugin 1.0
- *	© 2022 Scott Ogrin
+ *	@license PikaJS Sortable plugin 1.0.1
+ *	© 2022-2025 Scott Ogrin
  * 	MIT License
  */
 
@@ -52,14 +52,14 @@
 
 		sortable: function(dragexpr, opts) {
 			var id = $.R(), cs = this, ds = this.find(dragexpr);
-			opts = opts || {};
-			opts.direction = opts.direction || $.sortable.defaults.direction;
-    	opts.on_dragstart = opts.on_dragstart || $.sortable.defaults.on_dragstart;
-			opts.on_dragend = opts.on_dragend || $.sortable.defaults.on_dragend;
-			opts.on_dragenter = opts.on_dragenter || $.sortable.defaults.on_dragenter;
-			opts.on_dragover = opts.on_dragover || $.sortable.defaults.on_dragover;
-			opts.on_dragleave = opts.on_dragleave || $.sortable.defaults.on_dragleave;
-			opts.on_drop = opts.on_drop || $.sortable.defaults.on_drop;
+			opts ??= {};
+			opts.direction ??= $.sortable.defaults.direction;
+    	opts.on_dragstart ??= $.sortable.defaults.on_dragstart;
+			opts.on_dragend ??= $.sortable.defaults.on_dragend;
+			opts.on_dragenter ??= $.sortable.defaults.on_dragenter;
+			opts.on_dragover ??= $.sortable.defaults.on_dragover;
+			opts.on_dragleave ??= $.sortable.defaults.on_dragleave;
+			opts.on_drop ??= $.sortable.defaults.on_drop;
 			if (cs.length == 0 || ds.length == 0) { return; }
 
 			// Mark each of these containers with the same ID
