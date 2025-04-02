@@ -1,6 +1,6 @@
 # PikaJS-Sortable
 
-Sortable (drag-n-drop) plugin for PikaJS that is **3.8KB** minified. Yup, that's tiny.
+Sortable (drag-n-drop) plugin for PikaJS that is **3.7 kB** minified. Yup, that's tiny.
 
 [Try the PikaJS Demo!](https://pikajs.com/)
 
